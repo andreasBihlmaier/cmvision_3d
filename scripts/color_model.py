@@ -124,6 +124,10 @@ class color_model():
 		return (blob_x, blob_y, blob_z)
 
 	def _getDepthAt(self, x,y):
+		if x >= self.depth_image.shape[0]:
+			x = self.depth_image.shape[0] - 1
+		if y >= self.depth_image.shape[1]:
+			y = self.depth_image.shape[1] -1
 		return self.depth_image[y][x]/1000
 
 	def _validateDepthAt(self, x, y):
