@@ -10,7 +10,7 @@ from cmvision_3d.msg import Blobs3d, Blob3d
 
 from cv_bridge import CvBridge
 
-import cv, cv2
+import cv2
 import numpy as np
 from color_model import color_model
 
