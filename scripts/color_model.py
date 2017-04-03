@@ -38,9 +38,9 @@ class color_model():
 	
 	# Error checking for blob to see if it's worthwhile to even publish. Returns true if so.
 	def validate(self):
-		return ( self._validateDepthAt(self.blob.x, self.blob.y) and 
-				self._validateDepthAt(self.blob.left, self.blob.top) and 
-				self._validateDepthAt(self.blob.right, self.blob.bottom) )
+		return ( self._validateDepthAt(self.blob.x, self.blob.y)) #and 
+#				self._validateDepthAt(self.blob.left, self.blob.top) and 
+#				self._validateDepthAt(self.blob.right, self.blob.bottom) )
 		
 		return False
 
